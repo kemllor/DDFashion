@@ -1,0 +1,109 @@
+swagger: "2.0"
+info:
+  title: beego Test API
+  description: beego has a very cool tools to autogenerate documents for your API
+  version: 1.0.0
+  termsOfService: http://beego.me/
+  contact:
+    email: astaxie@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+basePath: /v1
+paths:
+  /user/getUser/:
+    get:
+      tags:
+      - user
+      description: 获取指定用户
+      operationId: UserController.根据获取指定用户
+      parameters:
+      - in: query
+        name: uid
+        description: 用户ID
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '"操作成功"'
+          schema:
+            $ref: '#/definitions/models.User'
+  /user/register/:
+    get:
+      tags:
+      - user
+      description: 注册接口
+      operationId: UserController.注册
+      parameters:
+      - in: query
+        name: username
+        description: 帐号
+        required: true
+        type: string
+      - in: query
+        name: password
+        description: 密码
+        required: true
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.Account'
+  /user/setUserInfo/:
+    post:
+      tags:
+      - user
+      description: 用户信息
+      operationId: UserController.用户信息
+      parameters:
+      - in: header
+        name: utoken
+        description: userToken
+        type: string
+      - in: body
+        name: body
+        description: body for user content
+        required: true
+        schema:
+          $ref: '#/definitions/models.User'
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/.'
+definitions:
+  .:
+    type: object
+  models.Account:
+    title: Account
+    type: object
+    properties:
+      icon:
+        type: string
+      nickName:
+        type: string
+      userName:
+        type: string
+      userToken:
+        type: string
+      vertMoney:
+        type: integer
+        format: int64
+  models.User:
+    title: User
+    type: object
+    properties:
+      email:
+        type: string
+      gender:
+        type: integer
+        format: int64
+      idCard:
+        type: string
+      mobile:
+        type: string
+      name:
+        type: string
+      qqToken:
+        type: string
+      wxToken:
+        type: string

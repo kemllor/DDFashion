@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;DDFashion&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../zhulong" />
+      <root url="file://$PROJECT_DIR$/../samples" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../kuaifa_device_fromdata" />
+      <root url="file://$PROJECT_DIR$/../postDemo" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../zhulong" />
+      <root url="file://$PROJECT_DIR$/../samples" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../kuaifa_device_fromdata" />
+      <root url="file://$PROJECT_DIR$/../postDemo" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

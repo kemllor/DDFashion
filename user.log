@@ -1,0 +1,4 @@
+2017/08/15 10:39:31 [I] [parser.go:96] generate router from comments
+2017/08/15 10:39:32 [I] [asm_amd64.s:2197] http server Running on http://:8088
+2017/08/15 10:39:34 [I] [router.go:244] D:\work\kemllor\go\src\DDFashion\controllers no changed
+2017/08/15 10:39:36 [I] [asm_amd64.s:2197] http server Running on http://:8088
